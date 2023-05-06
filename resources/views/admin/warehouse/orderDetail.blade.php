@@ -74,14 +74,28 @@
                 <input type="text" class="form-control" placeholder="search...">
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-6" style="float:right">
+            <div class="col-md-6 col-sm-6 col-xs-6" style="float:right">
               <div class="input-groups">
                  
                 <form action="{{route('admin.orderDetails')}}" method="GET">
-                From <input style="width: 50%;" type="date" class="form-control pull-right" id="reservation" name="date_to" autocomplete="off" >
-                To <input style="width: 50%;"  type="date" class="form-control pull-right" id="reservation" name="date_from" autocomplete="off" >
+               <div style="display: flex; align-items: center: justify-content:flex-end">
+                <div style="display: flex;
+                margin: 0 5px;
+                align-items: center;
+                width: 29%;">
+                  Từ <input style="margin-left: 5px;" type="date" class="form-control" id="reservation" name="date_to" autocomplete="off" >
+                </div>
+               <div style="    display: flex;
+               margin: 0 5px;
+               align-items: center;
+               width: 29%;">
+                Đến  <input style="margin-left: 5px;"  type="date" class="form-control" id="reservation" name="date_from" autocomplete="off" >
+               </div>
+             
                 <!-- /.input group -->
                   <button type="submit" class="btn btn-success">Tìm</button>
+               </div>
+           
                   </form>
               </div>
             </div>
